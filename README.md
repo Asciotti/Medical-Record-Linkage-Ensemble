@@ -11,9 +11,9 @@ Siaw-Teng Liaw <siaw@unsw.edu.au>.
 
 Provided is an additional `requirements.txt`, please install the package requirements via that.
 
-1. Prepare the cleaned datasets for Scheme A, which are stored in two files `febrl3_UNSW.csv` and `febrl3_UNSW.csv`. To reproduce those two files, use Python Notebook (i.e., Jupyter Notebook of Anaconda3 distribution) to run `Rectify_Febrl_Datasets.ipynb`.
+1. Prepare the cleaned datasets for Scheme A, which are stored in two files `febrl_UNSW_train.csv` and `febrl_UNSW_test.csv`. To reproduce those two files, run `gen_raw_febrl_datasets.py`.
 
-2. Prepare the synthetic ePBRN-error-simulated datasets for Scheme B, which are stored in two files `ePBRN_D_dup.csv` and `ePBRN_F_dup.csv`. The original FEBRL dataset (all original, no duplicate) is contained in 2 files: `/ePBRN_Datasets/ePBRN_D_original.csv` and `/ePBRN_Datasets/ePBRN_F_original.csv`. To reproduce `ePBRN_D_dup.csv` and `ePBRN_F_dup.csv`, run `Error_Generator.ipynb`. In the first cell of the notebook, change variable `inputfile` to either `ePBRN_D_original` or `ePBRN_F_original`, which is respectively corresponding to variable `outputfile` of `ePBRN_D_dup` or `ePBRN_F_dup`. 
+2. Prepare the synthetic ePBRN-error-simulated datasets for Scheme B, which are stored in two files `ePBRN_dup_train.csv` and `ePBRN_dup_test.csv`. The original FEBRL dataset (all original, no duplicate) is contained in 2 files: `/ePBRN_Datasets/ePBRN_D_original.csv` (test set) and `/ePBRN_Datasets/ePBRN_F_original.csv` (train set). To reproduce `ePBRN_D_dup.csv` and `ePBRN_F_dup.csv`, run `Error_Generator.ipynb`. In the first cell of the notebook, change variable `inputfile` to either `ePBRN_D_original` or `ePBRN_F_original`, which is respectively corresponding to variable `outputfile` of `ePBRN_D_dup` or `ePBRN_F_dup`. 
 
 3. Reproduce results for Scheme A in the paper by running `FEBRL_UNSW_Linkage.ipynb`.
 
