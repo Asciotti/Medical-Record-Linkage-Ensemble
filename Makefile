@@ -7,3 +7,11 @@ venv:
 	touch venv/bin/activate
 clean:
 	rm -rf venv
+	
+
+jupyter_extentions:
+	jupyter contrib nbextension install --user
+	jupyter nbextensions_configurator enable --user
+
+jupyter: jupyter_extentions
+	jupyter notebook
