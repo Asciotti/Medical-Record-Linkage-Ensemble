@@ -8,10 +8,10 @@ def clean_data(df):
     df['month'] = df['date_of_birth'].dt.strftime('%m')
     df['year'] = df['date_of_birth'].dt.strftime('%Y')
 
-    df['postcode'] =   df['postcode'].fillna('0000')
+    df['postcode'] = df['postcode'].fillna('0000')
     df['postcode'] = df['postcode'].astype(int)
 
-    df['street_number'] =   df['street_number'].fillna('0')
+    df['street_number'] = df['street_number'].fillna('0')
     df['street_number'] = df['street_number'].astype(int)
 
     df = df.drop(["soc_sec_id",  "date_of_birth"], axis=1)
@@ -30,8 +30,8 @@ def clean_data(df):
 
 def find_links(df, true_links):
     for i in tqdm(range(len(true_links))):
-        k0  = true_links[i][0]
-        k1  = true_links[i][1]
+        k0 = true_links[i][0]
+        k1 = true_links[i][1]
         df.at[k0, "match_id"] = i
         df.at[k1, "match_id"] = i
     
@@ -53,4 +53,4 @@ def gen_raw_test_data():
 
 if __name__ == '__main__':
     gen_raw_train_data()
-    gen_raw_test_data()
+    gen_ra w_test_data()
