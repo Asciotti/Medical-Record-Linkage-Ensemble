@@ -43,11 +43,12 @@ def generate_false_links(df, size):
     indices_1 = []
     indices_2 = []
     unique_match_id = df["match_id"].unique()
+    # Comment(alecmori): This fails non-deterministically - will need to look into this.
     for j in tqdm(range(size)):
             false_pair_ids = choice(unique_match_id, 2)
             candidate_1_cluster = df.loc[df['match_id'] == false_pair_ids[0]]
-            candidate_1 = candidate_1_cluster.iloc[choice(range(len(candidate_1_cluster)))]
             candidate_2_cluster = df.loc[df['match_id'] == false_pair_ids[1]]
+            candidate_1 = candidate_1_cluster.iloc[choice(range(len(candidate_1_cluster)))]
             candidate_2 = candidate_2_cluster.iloc[choice(range(len(candidate_2_cluster)))]    
             indices_1 = indices_1 + [candidate_1["rec_id"]]
             indices_2 = indices_2 + [candidate_2["rec_id"]]  
