@@ -1,6 +1,16 @@
 import pandas as pd
 from tqdm import tqdm
 from numpy.random import choice
+import random
+import numpy as np
+import os
+def set_random_seed():
+    # set seed
+    seed = 24
+    random.seed(seed)
+    # Sklearn uses np random as well
+    np.random.seed(seed)
+    os.environ["PYTHONHASHSEED"] = str(seed)
 
 def swap_fields_flag(f11, f12, f21, f22):
     return ((f11 == f22) & (f12 == f21)).astype(float)
