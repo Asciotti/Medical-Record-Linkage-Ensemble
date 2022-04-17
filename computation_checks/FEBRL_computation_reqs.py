@@ -85,7 +85,7 @@ def prep_data():
     df_train['surname_nysiis'] = phonetic(df_train['surname'], method='nysiis')
 
     # Final train feature vectors and labels
-    X_train, y_train = generate_train_X_y(df_train)
+    X_train, y_train = generate_train_X_y(df_train, )
     print("Finished building X_train, y_train")
     # Blocking Criteria: declare non-match of all of the below fields disagree
     # Import
