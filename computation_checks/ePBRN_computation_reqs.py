@@ -2,7 +2,7 @@ import recordlinkage as rl, pandas as pd, numpy as np
 from sklearn.model_selection import KFold
 
 from sklearn.utils import shuffle
-
+import collections
 from sklearn.model_selection import KFold
 
 # (andrew) Need to add above directory to path since these notebooks run in their relative
