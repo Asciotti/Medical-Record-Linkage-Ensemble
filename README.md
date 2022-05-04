@@ -37,11 +37,17 @@ If you would like to replicate the computation and memory requirements, please r
 
 ## File/folder details
 Non-exhaustive list of files/folders:
+
 `computation_checks`: Contains scripts and duplicated source code to running the computational complexity results collected in the replication study
+
 `UNSW Error Generator`: Scripts and original data to produce Scheme B datasets (FEBRL + ePBRN derived data)
+
 `gen_raw_febrl_datasets.py`: Script to generate `febrl_UNSW_{train|test}.py` for Scheme A.
+
 `Makefile` + `windows_requirements.txt`: Helper makefile and list of python packages to replicate the python environment needed to run code
+
 `training_utils.py`: Contains common training/evaluation utils used across Scheme A and B
+
 `utils.py`: Common general utils used across the code base
 
 
