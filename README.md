@@ -2,6 +2,13 @@
 
 This repository contains a replication study for the paper "Statistical supervised meta-ensemble algorithm for data linkage", published in Journal of Biomedical Informatics. The original Github repo is located https://github.com/ePBRN/Medical-Record-Linkage-Ensemble. 
 
+Original paper citation:  
+Kha Vo, Jitendra Jonnagaddala, Siaw-Teng Liaw,  
+Journal of Biomedical Informatic, Volume 95, 2019,  
+103220, ISSN 1532-0464  
+https://doi.org/10.1016/j.jbi.2019.103220  
+
+
 Paper Authors: 
 Kha Vo <kha.vo@unsw.edu.au>,
 Jitendra Jonnagaddala <jitendra.jonnagaddala@unsw.edu.au>,
